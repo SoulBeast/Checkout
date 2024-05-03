@@ -1,0 +1,30 @@
+#block-discount-heading {
+    color: #00b9ff;
+}
+
+#discount-code {
+    width: 100%;
+}
+
+#discount-form .payment-option-inner .field .label {
+    display: none;
+}
+
+.payment-option-content .payment-option-inner {
+    width: 67%;
+    float: left;
+}
+
+.actions-toolbar {
+    width: 33%;
+    display: inline-block;
+    float: left;
+}
+
+.payment-option-content .actions-toolbar .primary {
+    width: 100%;
+}
+
+.payment-option-content .actions-toolbar .primary button {
+    width: 100%;
+}

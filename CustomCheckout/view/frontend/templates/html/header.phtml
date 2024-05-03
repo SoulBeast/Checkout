@@ -1,0 +1,19 @@
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "myCustomComponent": {
+                        "component": "Macademy_CustomCheckout/js/my-component"
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+<div data-bind="scope: 'myCustomComponent'">
+    <!-- Вставьте ваш компонент здесь -->
+    <!-- Пример: -->
+    <!-- ko template: 'Namespace_ModuleName/my-component' --><!-- /ko -->
+</div>
