@@ -1,0 +1,16 @@
+<?php 
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance(); 
+$customerSession = $objectManager->get('Magento\Customer\Model\Session');
+
+$storeInformation = $objectManager->create('Magento\Store\Model\Information');
+$store = $objectManager->create('Magento\Store\Model\Store');
+$storeInfo = $storeInformation->getStoreInformationObject($store);
+$phone = $storeInfo->getPhone();
+
+if ($customerSession->isLoggedIn() && $block->getData('zone') == 'checkout') {
+    $customer = $customerSession->getCustomer();
+    $customerName = $customer->getName();
+
+    echo '<div class="our-phone">Добро пожаловать, ' . $customerName . '! ' . 'Нужна помощь? позвоните нам в ' . $phone; 
+} 
+?>
