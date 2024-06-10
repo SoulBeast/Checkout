@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Macademy_HomeworkRemastered::homeworkremastered" title="View and Edit Card" module="Macademy_HomeworkRemastered" sortOrder="51" resource="Macademy_HomeworkRemastered::homeworkremastered"/>
+        <add id="Macademy_HomeworkRemastered::hello_configuration" title="Configuration" module="Macademy_HomeworkRemastered" sortOrder="99" parent="Macademy_HomeworkRemastered::homeworkremastered" action="adminhtml/system_config/edit/section/homeworkremastered" resource="Macademy_HomeworkRemastered::homeworkremastered_configuration"/>
+    </menu>
+</config>
