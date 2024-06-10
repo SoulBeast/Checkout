@@ -1,6 +1,6 @@
 <?php
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::THEME,
-    'frontend/Perspective/TestModule',
+    'frontend/Macademy/TestModule',
     __DIR__
 );
